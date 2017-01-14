@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlayout"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/clearbackground"
+    tools:context="com.shubham.newweatherapp.MainActivity">
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Saharanpur,India"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/thumbnailIcon"
+        android:layout_below="@+id/cityText"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_width="64dp"
+        android:layout_height="64dp" />
+
+    <TextView
+        android:id="@+id/tempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cityText"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal"
+        android:textSize="36sp"
+        android:layout_marginTop="25dp"
+        android:textColor="#fff"
+        android:text="10 Deg" />
+
+    <TextView
+        android:id="@+id/windText"
+        android:textColor="#fff"
+        android:text="Wind"
+        android:layout_below="@+id/thumbnailIcon"
+        android:layout_marginTop="35dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/cloudText"
+        android:textColor="#fff"
+        android:text="Cloud"
+        android:layout_below="@+id/windText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pressureText"
+        android:textColor="#fff"
+        android:text="Pressure"
+        android:layout_below="@+id/cloudText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/humidityText"
+        android:textColor="#fff"
+        android:text="Humidity"
+        android:layout_below="@+id/pressureText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/riseText"
+        android:textColor="#fff"
+        android:text="Sunrise"
+        android:layout_below="@+id/humidityText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/setText"
+        android:textColor="#fff"
+        android:text="Sunset"
+        android:layout_below="@+id/riseText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/minTemp"
+        android:textColor="#fff"
+        android:text="Minimum Temp"
+        android:layout_below="@+id/setText"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/maxTemp"
+        android:text="Maximum Temp"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/minTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/updateText"
+        android:text="Last Updated"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/maxTemp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
